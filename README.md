@@ -7,18 +7,22 @@ v1: 实现了mvc的基本功能，不包括参数动态赋值
 v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功能，并进一步优化v1版本的代码
 
 <h3>v2版本功能</h3>
-1、加载配置文件
-2、扫描指定包下的类
-3、实例化对象到IOC容器中
-4、依赖注入(DI)
-5、初始化HandlerMapping
-6、url请求映射，参数动态赋值，反射方法调用
+  <ol>
+    <li> 加载配置文件
+    <li> 扫描指定包下的类
+    <li> 实例化对象到IOC容器中
+    <li> 依赖注入(DI)
+    <li> 初始化HandlerMapping
+    <li> url请求映射，参数动态赋值，反射方法调用
+  </ol>
 
 <h3>用到的设计模式</h3>
-1、工厂模式
-2、单利模式
-3、委派模式(所有的请求委派给dispatcher处理，即路由功能)
-4、策略模式(不同的url调用不同的方法，解决代码臃肿的问题，解耦)
+  <ol>
+    <li> 工厂模式
+    <li> 单利模式
+    <li> 委派模式(所有的请求委派给dispatcher处理，即路由功能)
+    <li> 策略模式(不同的url调用不同的方法，解决代码臃肿的问题，解耦)
+  </ol>
 注: 由于是简易版mvc，所以用到的设计模式比较少，实际springMVC用到的设计模式比这多很多。
 
 <h3>实现步骤</h3>
@@ -30,16 +34,19 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
     <li> 自定义Annotation
   </ul>
 <h4>初始化阶段</h4>
-* 调用init方法，加载配置文件
-* 初始化IOC容器
-* 扫描相关的类
-* 创建实例，并保存IOC容器
-* 依赖注入(DI)
-* 初始化HandlerMapping
+  <ul>
+    <li> 调用init方法，加载配置文件
+    <li> 初始化IOC容器
+    <li> 扫描相关的类
+    <li> 创建实例，并保存IOC容器
+    <li> 依赖注入(DI)
+    <li> 初始化HandlerMapping
+  </ul>
 <h4>运行阶段</h4>
-* 调用doPost()/doGet()
-* 匹配HandlerMapping
-* 反射调用method.invoke()
-* 响应结果返回(response.getWrite().write())
-
+  <ul>
+    <li> 调用doPost()/doGet()
+    <li> 匹配HandlerMapping
+    <li> 反射调用method.invoke()
+    <li> 响应结果返回(response.getWrite().write())
+  </ul>
 
