@@ -48,7 +48,7 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
     <li> 匹配HandlerMapping
     <li> 反射调用method.invoke()
     <li> 响应结果返回(response.getWrite().write())
-  </ul>h3
+  </ul>
 <h3>项目依赖</h3>
 &lt;dependency&gt;<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId><b>javax.servlet</b>&lt;/groupId&gt;<br/>
