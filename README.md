@@ -22,20 +22,21 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
 注: 由于是简易版mvc，所以用到的设计模式比较少，实际springMVC用到的设计模式比这多很多。
 
 <h3>实现步骤</h3>
-
-<h3 color="gray">配置阶段</h3>
-* 配置web.xml
-* 设置init-param
-* 设定url-pattern
-* 自定义Annotation
-<h3 color="green">初始化阶段</h3>
+<h4>配置阶段</h4>
+  <ul>
+    <li> 配置web.xml
+    <li> 设置init-param
+    <li> 设定url-pattern
+    <li> 自定义Annotation
+  </ul>
+<h4>初始化阶段</h4>
 * 调用init方法，加载配置文件
 * 初始化IOC容器
 * 扫描相关的类
 * 创建实例，并保存IOC容器
 * 依赖注入(DI)
 * 初始化HandlerMapping
-<h3 color="blue">运行阶段</h3>
+<h4>运行阶段</h4>
 * 调用doPost()/doGet()
 * 匹配HandlerMapping
 * 反射调用method.invoke()
