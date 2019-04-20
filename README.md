@@ -50,15 +50,13 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
     <li> 响应结果返回(response.getWrite().write())
   </ul>h3
 <h3>项目依赖</h3>
-  <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>${servlet.api.version}</version>
-      <scope>provided</scope>
-  </dependency>
-
-  <dependency>
-      <groupId>org.javassist</groupId>
-      <artifactId>javassist</artifactId>
-      <version>3.24.1-GA</version>
-  </dependency>
+&lt;dependency&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId><b>javax.servlet</b>&lt;/groupId&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId><b>servlet-api</b>&lt;/artifactId&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;version><b>2.5</b>&lt;/version&gt;<br/>
+&lt;/dependency&gt;<br/>
+&lt;dependency&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId><b>org.javassist</b>&lt;/groupId&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId><b>javassist</b>&lt;/artifactId&gt;<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;version><b>3.24.1-GA</b>&lt;/version&gt;<br/>
+&lt;/dependency&gt;<br/>
