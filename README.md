@@ -48,5 +48,19 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
     <li> 匹配HandlerMapping
     <li> 反射调用method.invoke()
     <li> 响应结果返回(response.getWrite().write())
-  </ul>
+  </ul>h3
+<h3>项目依赖</h3>
+<code>
+  <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servlet.api.version}</version>
+      <scope>provided</scope>
+  </dependency>
 
+  <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.24.1-GA</version>
+  </dependency>
+</code>
