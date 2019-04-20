@@ -23,14 +23,11 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
 
 ###实现步骤
 
-<font color='gray'>
 ####配置阶段
 * 配置web.xml
 * 设置init-param
 * 设定url-pattern
 * 自定义Annotation
-</font>
-<font color='green'>
 ####初始化阶段
 * 调用init方法，加载配置文件
 * 初始化IOC容器
@@ -38,13 +35,10 @@ v2: 在实现mvc的基本功能基础上，实现了请求参数动态赋值功�
 * 创建实例，并保存IOC容器
 * 依赖注入(DI)
 * 初始化HandlerMapping
-</font>
-<font color='blue'>
 ####运行阶段
 * 调用doPost()/doGet()
 * 匹配HandlerMapping
 * 反射调用method.invoke()
 * 响应结果返回(response.getWrite().write())
-</font>
 
 
